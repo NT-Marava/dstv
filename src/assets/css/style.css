@@ -1,16 +1,19 @@
-/*
+html, body {
+  /* overflow:hidden; */
+  height: 100%;
+}
 
-New Event
-
-http://www.templatemo.com/tm-486-new-event
-
-*/
+/* #site-wrapper{
+  overflow: auto;
+  height: 100%;
+} */
 
 body {
-		background: #ffffff;
+		background: #c2c2c2;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-		font-weight: 400;
+    font-weight: 400;
+    
 }
 
 
@@ -64,13 +67,14 @@ a {
 }
 
 #overview,
-#register {
+#contact-us {
   padding-top: 14rem;
   padding-bottom: 14rem;
 }
 
 #detail, #video,
-#speakers, 
+#services, 
+#gallery,
 #program,
 #sponsors, 
 #contact, footer {
@@ -79,14 +83,14 @@ a {
 }
 
 #detail,
-#speakers, #sponsors,
+#services, #sponsors,#gallery
 footer {
   text-align: center;
 }
 
 #overview h3,
 #detail h3, #video h3,
-#register h3,
+#contact-us h3,
 #venue h3,
 #contact h3 {
     padding-bottom: 12px;
@@ -195,6 +199,7 @@ footer {
 .custom-navbar {
     margin-bottom: 0;
     background-color: #101010;
+    min-height:75px;
 }
 
 .custom-navbar .navbar-brand {
@@ -231,7 +236,9 @@ footer {
 
 .custom-navbar .navbar-toggle {
     border: none;
-    padding-top: 10px;
+    padding-top: 20px;
+    font-size: 22px;
+    color: #afb2ba;
 }
 
 .custom-navbar .navbar-toggle {
@@ -245,7 +252,7 @@ footer {
 
 @media(min-width:768px) {
     .custom-navbar {
-        padding: 20px 0;
+        padding: 2px 0;
         border-bottom: 0;
         background: 0 0; 
     }
@@ -320,29 +327,29 @@ footer {
 
 
 /*---------------------------------------
-   Speakers section              
+   services section              
 -----------------------------------------*/
-#speakers {
-    background: #f9f9f9;
+#services , #gallery{
+    background: #c1c1c1;
 }
 
-#speakers h3 {
+#services h3 , #gallery h3{
     font-size: 18px;
     margin-bottom: 0px;
 }
 
-#speakers h6 {
+#services h6, #services h6 {
   color: #666;
   margin-top: 4px;
 }
 
-#speakers img {
+#services img ,  #gallery img{
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-#speakers .col-md-3 {
+#services .col-md-3 , #gallery .col-md-3 {
     display: block;
     width: 100%;
     padding-top: 30px;
@@ -350,7 +357,7 @@ footer {
     margin-bottom: 22px;
 }
 
-#speakers .speakers-wrapper {
+#services .services-wrapper, #gallery .services-wrapper {
     background: #ffffff;
     padding-bottom: 22px;
 }
@@ -419,7 +426,7 @@ footer {
 /*---------------------------------------
     Regsiter section              
 -----------------------------------------*/
-#register {
+#contact-us {
     background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -427,7 +434,7 @@ footer {
     color: #ffffff;
 }
 
-#register .form-control {
+#contact-us .form-control {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 0px;
@@ -435,22 +442,22 @@ footer {
   margin-bottom: 16px;
 }
 
-#register input {
+#contact-us input {
   height: 45px;
 }
 
-#register input[type="submit"] {
-  background: #f2545f;
-  border-radius: 100px;
+#contact-us input[type="submit"] {
+  background: #3e7590;
+  border-radius: 5px;
   border: none;
   color: #ffffff;
-  letter-spacing: 2px;
-  height: 50px;
+  letter-spacing: 1px;
+  height: 45px;
   margin-top: 12px;
   transition: all 0.4s ease-in-out;
 }
 
-#register input[type="submit"]:hover {
+#contact-us input[type="submit"]:hover {
   background: #ffffff;
   color: #222;
 }
@@ -615,16 +622,16 @@ footer {
 /* Back top */
 .go-top {
   background-color: #222;
-  bottom: 2em;
+  bottom: 1em;
   right: 2em;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 20px;
   display: none;
   position: fixed;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
   transition: all 0.4s ease-in-out;
 }
@@ -706,7 +713,7 @@ footer {
 
   #overview img,
   #detail .col-md-4,
-  #register form {
+  #contact-us form {
     padding-top: 32px;
   }
 
@@ -749,10 +756,25 @@ footer {
   border: 1px solid !important;
 }
 
+.nav.nav-pills.center-tabs>li.active>a {
+  color: #fff;
+  background-color: #3478b3;
+  border: 1px solid #3478b3 !important;
+}
+
 .border{
   border: 1px solid ;
 }
 
 .image{
   margin-bottom: 3em;
+}
+
+
+.mb{
+  margin-bottom: 5px;
+}
+
+.text-white{
+  color: #ffffff !important;
 }

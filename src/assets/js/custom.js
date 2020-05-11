@@ -35,9 +35,9 @@ $(document).ready(function() {
     $('#overview').parallax("100%", 0.3);
     $('#detail').parallax("100%", 0.2);
     $('#video').parallax("100%", 0.3);
-    $('#speakers').parallax("100%", 0.1);
+    $('#services').parallax("100%", 0.1);
     $('#gallery').parallax("100%", 0.2);
-    $('#register').parallax("100%", 0.1);
+    $('#contact-us').parallax("100%", 0.1);
     $('#faq').parallax("100%", 0.3);
     $('#venue').parallax("100%", 0.1);
     $('#sponsors').parallax("100%", 0.3);
@@ -50,7 +50,7 @@ $(document).ready(function() {
   /* Owl Carousel
   -----------------------------------------------*/
   $(document).ready(function() {
-    $("#owl-speakers").owlCarousel({
+    $("#owl-services").owlCarousel({
       autoPlay: 6000,
       items : 4,
       itemsDesktop : [1199,2],

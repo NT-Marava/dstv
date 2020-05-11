@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/wpp/floating-wpp.min.css"> 
 	<!-- Main css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -27,6 +28,16 @@
 </head>
 
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+	<div id="site-wrapper">
+
+		<style>
+			#WAButton {
+				z-index: 9999999999;
+				
+			}
+		</style>
+		<div id="WAButton"></div> 
+	
 	<!-- <div class="preloader">
 
 		<div class="sk-rotating-plane"></div>
@@ -37,14 +48,31 @@
 
 
 
-
+</div>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.parallax.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/wpp/floating-wpp.min.js"></script>
+
+	<script type="text/javascript">  
+		$(function () {
+				$('#WAButton').floatingWhatsApp({
+					phone: '', //WhatsApp Business phone number
+					headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+					popupMessage: 'Hello, how can we help you?', //Popup Message
+					showPopup: true, //Enables popup display
+					buttonImage: '<img src="assets/wpp/whatsapp2.svg" />', //Button Image
+					//headerColor: 'crimson', //Custom header color
+					backgroundColor: '#25d366', //Custom background button color
+					position: "left" //Position: left | right
+	  
+				});
+			});
+	  </script> 
 </body>
 
 </html>
