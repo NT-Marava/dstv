@@ -73,13 +73,17 @@ a {
 }
 
 #detail, #video,
-#services, 
-#gallery,
+#services,
 #program,
 #sponsors, 
 #contact, footer {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+}
+
+#gallery{
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 #detail,
@@ -777,4 +781,34 @@ footer {
 
 .text-white{
   color: #ffffff !important;
+}
+
+
+.container-filter {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: center;
+}
+
+.container-filter li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 5px 20px;
+}
+
+.container-filter li a {
+  display: block;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 3px;
 }
