@@ -36,8 +36,8 @@ $(document).ready(function () {
     $('#detail').parallax("100%", 0.2);
     $('#video').parallax("100%", 0.3);
     $('#services').parallax("100%", 0.1);
-    $('#gallery').parallax("100%", 0.2);
-    $('#contact-us').parallax("100%", 0.1);
+    $('#program').parallax("100%", 0.2);
+    $('#register').parallax("100%", 0.1);
     $('#faq').parallax("100%", 0.3);
     $('#venue').parallax("100%", 0.1);
     $('#sponsors').parallax("100%", 0.3);
@@ -81,6 +81,32 @@ $(document).ready(function () {
   /* wow
   -------------------------------*/
   new WOW({ mobile: false }).init();
+
+
+
+  $('.counter').each(function () {
+    var $this = $(this),
+      countTo = $this.attr('data-count');
+
+    $({ countNum: $this.text() }).animate({
+      countNum: countTo
+    },
+
+      {
+
+        duration: 8000,
+        easing: 'linear',
+        step: function () {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+          $this.text(this.countNum);
+          //alert('finished');
+        }
+
+      });
+
+  });
 
 });
 
