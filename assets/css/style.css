@@ -8,7 +8,7 @@ http://www.templatemo.com/tm-486-new-event
 
 body {
   background: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plain', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -35,10 +35,10 @@ h2 {
 font-size: 30px;
 text-transform: uppercase;
 }
-
 h3 {
-line-height: 36px;
-}
+  line-height: 36px;
+  }
+
 
 h5 {
   letter-spacing: 1px;
@@ -60,6 +60,13 @@ outline: none;
 /*---------------------------------------
   General               
 -----------------------------------------*/
+h5.counter {
+  letter-spacing: 1px;
+  padding-top: 10px;
+  font-size:35px;
+  font-weight: 600;
+}
+
 .section-title {
 margin-bottom: 32px;
 }
@@ -72,7 +79,7 @@ padding-bottom: 14rem;
 
 #detail, #video,
 #services, 
-#program,
+#gallery,
 #sponsors, 
 #contact, footer {
   padding-top: 10rem;
@@ -210,8 +217,8 @@ background-color: #222;
 .custom-navbar .nav li a {
   color: #ddd;
   font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.6px;
+  font-weight: 700;
+  /* letter-spacing: 0.6px; */
   text-transform: uppercase;
   line-height: 40px;
   transition: all 0.4s ease-in-out;
@@ -301,13 +308,17 @@ position: relative;
 padding-bottom: 32px;
 }
 
-
+#overview h5 {
+  letter-spacing: 0px;
+  padding-top: 10px;
+  font-weight: 700;
+}
 
 /*---------------------------------------
   Detail section              
 -----------------------------------------*/
 #detail {
-  background: #222;
+  background: url('../images/bg-01.jpg') 50% 0 repeat-y fixed;
   color: #ffffff;
 }
 
@@ -335,9 +346,13 @@ border: none;
 }
 
 #services h3 , #gallery h3{
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 0px;
 }
+
+#services h3 {
+  line-height: 30px;
+  }
 
 #services h6, #services h6 {
 color: #666;
@@ -350,13 +365,13 @@ max-width: 100%;
 height: auto;
 }
 
-#services .col-md-3 , #gallery .col-md-3 {
+#services .col-md-3 {
   display: block;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 20px;
   margin-bottom: 22px;
-}
+} 
 
 #services .services-wrapper, #gallery .services-wrapper {
   background: #ffffff;
